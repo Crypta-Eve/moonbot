@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "embed"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -28,6 +29,11 @@ var (
 	token   string
 
 	client *http.Client
+
+	//go:embed ore_variants.json
+	oreVariantsRaw []byte
+
+	oreVariantsMap map[int]int
 )
 
 func main() {
@@ -50,6 +56,21 @@ func main() {
 	checkError(err)
 	token, err = envy.MustGet("SEAT_TOKEN")
 	checkError(err)
+
+	// Now parse in the ore variants file
+	type variantsParsed []struct {
+		Src  int    `json:"src"`
+		Name string `json:"name"`
+		Dst  int    `json:"dst"`
+	}
+
+	var variants variantsParsed
+	err = json.Unmarshal(oreVariantsRaw, &variants)
+	checkError(err)
+	oreVariantsMap = make(map[int]int)
+	for _, variant := range variants {
+		oreVariantsMap[variant.Src] = variant.Dst
+	}
 
 	dg, err := discordgo.New("Bot " + dtoken)
 	if err != nil {
@@ -185,7 +206,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 					d := 24 * time.Hour
 					// make sure that this entry refers to this extraction
 					if entryTime.Truncate(d).After(e.ChunkArrivalTimeParsed().Truncate(d).Add(-1 * time.Second)) {
-						minedTotal[mined.TypeID] += mined.Quantity
+						minedTotal[oreVariantsMap[mined.TypeID]] += mined.Quantity
 					}
 				}
 			}
@@ -213,13 +234,24 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		} else {
 			isUpcoming = true
 
-			dateString := e.ChunkArrivalTimeParsed().Format("Jan _2 15:04") + " -- " + humanize.SIWithDigits(float64(e.volume()), 2, "m3")
+			secondLine := e.ChunkArrivalTimeParsed().Format("Jan _2 15:04") +
+				" -- " + humanize.SIWithDigits(float64(e.volume()), 2, "m3") + "\n"
+
+			// Now sort the moon contents, luckily with groupIDs the higher is better for moons.
+			contents := e.Moon.MoonReport.Content
+			sort.Slice(contents, func(i, j int) bool {
+				return contents[i].GroupID > contents[j].GroupID
+			})
+
+			for _, ore := range contents {
+				secondLine += " " + ore.TypeName
+			}
 
 			if e.Structure.Info.StructureID > 0 {
 				//	We have the structure info, act accordingly
-				upcomingEmbed.AddField(e.Structure.Info.Name, dateString)
+				upcomingEmbed.AddField(e.Structure.Info.Name, secondLine)
 			} else {
-				upcomingEmbed.AddField(e.Moon.Name, dateString)
+				upcomingEmbed.AddField(e.Moon.Name, secondLine)
 			}
 		}
 	}

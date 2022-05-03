@@ -1,0 +1,1797 @@
+[
+    {
+      "src": 18,
+      "name": "Plagioclase",
+      "dst": 18
+    },
+    {
+      "src": 19,
+      "name": "Spodumain",
+      "dst": 19
+    },
+    {
+      "src": 20,
+      "name": "Kernite",
+      "dst": 20
+    },
+    {
+      "src": 21,
+      "name": "Hedbergite",
+      "dst": 21
+    },
+    {
+      "src": 22,
+      "name": "Arkonor",
+      "dst": 22
+    },
+    {
+      "src": 1223,
+      "name": "Bistot",
+      "dst": 1223
+    },
+    {
+      "src": 1224,
+      "name": "Pyroxeres",
+      "dst": 1224
+    },
+    {
+      "src": 1225,
+      "name": "Crokite",
+      "dst": 1225
+    },
+    {
+      "src": 1226,
+      "name": "Jaspet",
+      "dst": 1226
+    },
+    {
+      "src": 1227,
+      "name": "Omber",
+      "dst": 1227
+    },
+    {
+      "src": 1228,
+      "name": "Scordite",
+      "dst": 1228
+    },
+    {
+      "src": 1229,
+      "name": "Gneiss",
+      "dst": 1229
+    },
+    {
+      "src": 1230,
+      "name": "Veldspar",
+      "dst": 1230
+    },
+    {
+      "src": 1231,
+      "name": "Hemorphite",
+      "dst": 1231
+    },
+    {
+      "src": 1232,
+      "name": "Dark Ochre",
+      "dst": 1232
+    },
+    {
+      "src": 11396,
+      "name": "Mercoxit",
+      "dst": 11396
+    },
+    {
+      "src": 16262,
+      "name": "Clear Icicle",
+      "dst": 16262
+    },
+    {
+      "src": 16263,
+      "name": "Glacial Mass",
+      "dst": 16263
+    },
+    {
+      "src": 16264,
+      "name": "Blue Ice",
+      "dst": 16264
+    },
+    {
+      "src": 16265,
+      "name": "White Glaze",
+      "dst": 16265
+    },
+    {
+      "src": 16266,
+      "name": "Glare Crust",
+      "dst": 16266
+    },
+    {
+      "src": 16267,
+      "name": "Dark Glitter",
+      "dst": 16267
+    },
+    {
+      "src": 16268,
+      "name": "Gelidus",
+      "dst": 16268
+    },
+    {
+      "src": 16269,
+      "name": "Krystallos",
+      "dst": 16269
+    },
+    {
+      "src": 17425,
+      "name": "Crimson Arkonor",
+      "dst": 22
+    },
+    {
+      "src": 17426,
+      "name": "Prime Arkonor",
+      "dst": 22
+    },
+    {
+      "src": 17428,
+      "name": "Triclinic Bistot",
+      "dst": 1223
+    },
+    {
+      "src": 17429,
+      "name": "Monoclinic Bistot",
+      "dst": 1223
+    },
+    {
+      "src": 17432,
+      "name": "Sharp Crokite",
+      "dst": 1225
+    },
+    {
+      "src": 17433,
+      "name": "Crystalline Crokite",
+      "dst": 1225
+    },
+    {
+      "src": 17436,
+      "name": "Onyx Ochre",
+      "dst": 1232
+    },
+    {
+      "src": 17437,
+      "name": "Obsidian Ochre",
+      "dst": 1232
+    },
+    {
+      "src": 17440,
+      "name": "Vitric Hedbergite",
+      "dst": 21
+    },
+    {
+      "src": 17441,
+      "name": "Glazed Hedbergite",
+      "dst": 21
+    },
+    {
+      "src": 17444,
+      "name": "Vivid Hemorphite",
+      "dst": 1231
+    },
+    {
+      "src": 17445,
+      "name": "Radiant Hemorphite",
+      "dst": 1231
+    },
+    {
+      "src": 17448,
+      "name": "Pure Jaspet",
+      "dst": 1226
+    },
+    {
+      "src": 17449,
+      "name": "Pristine Jaspet",
+      "dst": 1226
+    },
+    {
+      "src": 17452,
+      "name": "Luminous Kernite",
+      "dst": 20
+    },
+    {
+      "src": 17453,
+      "name": "Fiery Kernite",
+      "dst": 20
+    },
+    {
+      "src": 17455,
+      "name": "Azure Plagioclase",
+      "dst": 18
+    },
+    {
+      "src": 17456,
+      "name": "Rich Plagioclase",
+      "dst": 18
+    },
+    {
+      "src": 17459,
+      "name": "Solid Pyroxeres",
+      "dst": 1224
+    },
+    {
+      "src": 17460,
+      "name": "Viscous Pyroxeres",
+      "dst": 1224
+    },
+    {
+      "src": 17463,
+      "name": "Condensed Scordite",
+      "dst": 1228
+    },
+    {
+      "src": 17464,
+      "name": "Massive Scordite",
+      "dst": 1228
+    },
+    {
+      "src": 17466,
+      "name": "Bright Spodumain",
+      "dst": 19
+    },
+    {
+      "src": 17467,
+      "name": "Gleaming Spodumain",
+      "dst": 19
+    },
+    {
+      "src": 17470,
+      "name": "Concentrated Veldspar",
+      "dst": 1230
+    },
+    {
+      "src": 17471,
+      "name": "Dense Veldspar",
+      "dst": 1230
+    },
+    {
+      "src": 17865,
+      "name": "Iridescent Gneiss",
+      "dst": 1229
+    },
+    {
+      "src": 17866,
+      "name": "Prismatic Gneiss",
+      "dst": 1229
+    },
+    {
+      "src": 17867,
+      "name": "Silvery Omber",
+      "dst": 1227
+    },
+    {
+      "src": 17868,
+      "name": "Golden Omber",
+      "dst": 1227
+    },
+    {
+      "src": 17869,
+      "name": "Magma Mercoxit",
+      "dst": 11396
+    },
+    {
+      "src": 17870,
+      "name": "Vitreous Mercoxit",
+      "dst": 11396
+    },
+    {
+      "src": 17975,
+      "name": "Thick Blue Ice",
+      "dst": 16264
+    },
+    {
+      "src": 17976,
+      "name": "Pristine White Glaze",
+      "dst": 16265
+    },
+    {
+      "src": 17977,
+      "name": "Smooth Glacial Mass",
+      "dst": 16263
+    },
+    {
+      "src": 17978,
+      "name": "Enriched Clear Icicle",
+      "dst": 16262
+    },
+    {
+      "src": 26713,
+      "name": "Flawed Gneiss",
+      "dst": 1229
+    },
+    {
+      "src": 26851,
+      "name": "Fools Crokite",
+      "dst": 1225
+    },
+    {
+      "src": 26852,
+      "name": "Flawed Arkonor",
+      "dst": 22
+    },
+    {
+      "src": 26868,
+      "name": "Flawed Jaspet",
+      "dst": 1226
+    },
+    {
+      "src": 27028,
+      "name": "Chondrite",
+      "dst": 1230
+    },
+    {
+      "src": 28367,
+      "name": "Batch Compressed Arkonor",
+      "dst": 22
+    },
+    {
+      "src": 28385,
+      "name": "Batch Compressed Crimson Arkonor",
+      "dst": 22
+    },
+    {
+      "src": 28387,
+      "name": "Batch Compressed Prime Arkonor",
+      "dst": 22
+    },
+    {
+      "src": 28388,
+      "name": "Batch Compressed Bistot",
+      "dst": 1223
+    },
+    {
+      "src": 28389,
+      "name": "Batch Compressed Monoclinic Bistot",
+      "dst": 1223
+    },
+    {
+      "src": 28390,
+      "name": "Batch Compressed Triclinic Bistot",
+      "dst": 1223
+    },
+    {
+      "src": 28391,
+      "name": "Batch Compressed Crokite",
+      "dst": 1225
+    },
+    {
+      "src": 28392,
+      "name": "Batch Compressed Crystalline Crokite",
+      "dst": 1225
+    },
+    {
+      "src": 28393,
+      "name": "Batch Compressed Sharp Crokite",
+      "dst": 1225
+    },
+    {
+      "src": 28394,
+      "name": "Batch Compressed Dark Ochre",
+      "dst": 1232
+    },
+    {
+      "src": 28395,
+      "name": "Batch Compressed Obsidian Ochre",
+      "dst": 1232
+    },
+    {
+      "src": 28396,
+      "name": "Batch Compressed Onyx Ochre",
+      "dst": 1232
+    },
+    {
+      "src": 28397,
+      "name": "Batch Compressed Gneiss",
+      "dst": 1229
+    },
+    {
+      "src": 28398,
+      "name": "Batch Compressed Iridescent Gneiss",
+      "dst": 1229
+    },
+    {
+      "src": 28399,
+      "name": "Batch Compressed Prismatic Gneiss",
+      "dst": 1229
+    },
+    {
+      "src": 28400,
+      "name": "Batch Compressed Glazed Hedbergite",
+      "dst": 21
+    },
+    {
+      "src": 28401,
+      "name": "Batch Compressed Hedbergite",
+      "dst": 21
+    },
+    {
+      "src": 28402,
+      "name": "Batch Compressed Vitric Hedbergite",
+      "dst": 21
+    },
+    {
+      "src": 28403,
+      "name": "Batch Compressed Hemorphite",
+      "dst": 1231
+    },
+    {
+      "src": 28404,
+      "name": "Batch Compressed Radiant Hemorphite",
+      "dst": 1231
+    },
+    {
+      "src": 28405,
+      "name": "Batch Compressed Vivid Hemorphite",
+      "dst": 1231
+    },
+    {
+      "src": 28406,
+      "name": "Batch Compressed Jaspet",
+      "dst": 1226
+    },
+    {
+      "src": 28407,
+      "name": "Batch Compressed Pristine Jaspet",
+      "dst": 1226
+    },
+    {
+      "src": 28408,
+      "name": "Batch Compressed Pure Jaspet",
+      "dst": 1226
+    },
+    {
+      "src": 28409,
+      "name": "Batch Compressed Fiery Kernite",
+      "dst": 20
+    },
+    {
+      "src": 28410,
+      "name": "Batch Compressed Kernite",
+      "dst": 20
+    },
+    {
+      "src": 28411,
+      "name": "Batch Compressed Luminous Kernite",
+      "dst": 20
+    },
+    {
+      "src": 28412,
+      "name": "Batch Compressed Magma Mercoxit",
+      "dst": 11396
+    },
+    {
+      "src": 28413,
+      "name": "Batch Compressed Mercoxit",
+      "dst": 11396
+    },
+    {
+      "src": 28414,
+      "name": "Batch Compressed Vitreous Mercoxit",
+      "dst": 11396
+    },
+    {
+      "src": 28415,
+      "name": "Batch Compressed Golden Omber",
+      "dst": 1227
+    },
+    {
+      "src": 28416,
+      "name": "Batch Compressed Omber",
+      "dst": 1227
+    },
+    {
+      "src": 28417,
+      "name": "Batch Compressed Silvery Omber",
+      "dst": 1227
+    },
+    {
+      "src": 28418,
+      "name": "Batch Compressed Bright Spodumain",
+      "dst": 19
+    },
+    {
+      "src": 28419,
+      "name": "Batch Compressed Gleaming Spodumain",
+      "dst": 19
+    },
+    {
+      "src": 28420,
+      "name": "Batch Compressed Spodumain",
+      "dst": 19
+    },
+    {
+      "src": 28421,
+      "name": "Batch Compressed Azure Plagioclase",
+      "dst": 18
+    },
+    {
+      "src": 28422,
+      "name": "Batch Compressed Plagioclase",
+      "dst": 18
+    },
+    {
+      "src": 28423,
+      "name": "Batch Compressed Rich Plagioclase",
+      "dst": 18
+    },
+    {
+      "src": 28424,
+      "name": "Batch Compressed Pyroxeres",
+      "dst": 1224
+    },
+    {
+      "src": 28425,
+      "name": "Batch Compressed Solid Pyroxeres",
+      "dst": 1224
+    },
+    {
+      "src": 28426,
+      "name": "Batch Compressed Viscous Pyroxeres",
+      "dst": 1224
+    },
+    {
+      "src": 28427,
+      "name": "Batch Compressed Condensed Scordite",
+      "dst": 1228
+    },
+    {
+      "src": 28428,
+      "name": "Batch Compressed Massive Scordite",
+      "dst": 1228
+    },
+    {
+      "src": 28429,
+      "name": "Batch Compressed Scordite",
+      "dst": 1228
+    },
+    {
+      "src": 28430,
+      "name": "Batch Compressed Concentrated Veldspar",
+      "dst": 1230
+    },
+    {
+      "src": 28431,
+      "name": "Batch Compressed Dense Veldspar",
+      "dst": 1230
+    },
+    {
+      "src": 28432,
+      "name": "Batch Compressed Veldspar",
+      "dst": 1230
+    },
+    {
+      "src": 28433,
+      "name": "Compressed Blue Ice",
+      "dst": 16264
+    },
+    {
+      "src": 28434,
+      "name": "Compressed Clear Icicle",
+      "dst": 16262
+    },
+    {
+      "src": 28435,
+      "name": "Compressed Dark Glitter",
+      "dst": 16267
+    },
+    {
+      "src": 28436,
+      "name": "Compressed Enriched Clear Icicle",
+      "dst": 16262
+    },
+    {
+      "src": 28437,
+      "name": "Compressed Gelidus",
+      "dst": 16268
+    },
+    {
+      "src": 28438,
+      "name": "Compressed Glacial Mass",
+      "dst": 16263
+    },
+    {
+      "src": 28439,
+      "name": "Compressed Glare Crust",
+      "dst": 16266
+    },
+    {
+      "src": 28440,
+      "name": "Compressed Krystallos",
+      "dst": 16269
+    },
+    {
+      "src": 28441,
+      "name": "Compressed Pristine White Glaze",
+      "dst": 16265
+    },
+    {
+      "src": 28442,
+      "name": "Compressed Smooth Glacial Mass",
+      "dst": 16263
+    },
+    {
+      "src": 28443,
+      "name": "Compressed Thick Blue Ice",
+      "dst": 16264
+    },
+    {
+      "src": 28444,
+      "name": "Compressed White Glaze",
+      "dst": 16265
+    },
+    {
+      "src": 28617,
+      "name": "Banidine",
+      "dst": 1230
+    },
+    {
+      "src": 28618,
+      "name": "Augumene",
+      "dst": 1224
+    },
+    {
+      "src": 28619,
+      "name": "Mercium",
+      "dst": 1227
+    },
+    {
+      "src": 28620,
+      "name": "Lyavite",
+      "dst": 20
+    },
+    {
+      "src": 28621,
+      "name": "Pithix",
+      "dst": 1226
+    },
+    {
+      "src": 28622,
+      "name": "Green Arisite",
+      "dst": 1229
+    },
+    {
+      "src": 28623,
+      "name": "Oeryl",
+      "dst": 1232
+    },
+    {
+      "src": 28624,
+      "name": "Geodite",
+      "dst": 1225
+    },
+    {
+      "src": 28625,
+      "name": "Polygypsum",
+      "dst": 22
+    },
+    {
+      "src": 28626,
+      "name": "Zuthrine",
+      "dst": 11396
+    },
+    {
+      "src": 28627,
+      "name": "Azure Ice",
+      "dst": 16264
+    },
+    {
+      "src": 28628,
+      "name": "Crystalline Icicle",
+      "dst": 16262
+    },
+    {
+      "src": 45490,
+      "name": "Zeolites",
+      "dst": 45490
+    },
+    {
+      "src": 45491,
+      "name": "Sylvite",
+      "dst": 45491
+    },
+    {
+      "src": 45492,
+      "name": "Bitumens",
+      "dst": 45492
+    },
+    {
+      "src": 45493,
+      "name": "Coesite",
+      "dst": 45493
+    },
+    {
+      "src": 45494,
+      "name": "Cobaltite",
+      "dst": 45494
+    },
+    {
+      "src": 45495,
+      "name": "Euxenite",
+      "dst": 45495
+    },
+    {
+      "src": 45496,
+      "name": "Titanite",
+      "dst": 45496
+    },
+    {
+      "src": 45497,
+      "name": "Scheelite",
+      "dst": 45497
+    },
+    {
+      "src": 45498,
+      "name": "Otavite",
+      "dst": 45498
+    },
+    {
+      "src": 45499,
+      "name": "Sperrylite",
+      "dst": 45499
+    },
+    {
+      "src": 45500,
+      "name": "Vanadinite",
+      "dst": 45500
+    },
+    {
+      "src": 45501,
+      "name": "Chromite",
+      "dst": 45501
+    },
+    {
+      "src": 45502,
+      "name": "Carnotite",
+      "dst": 45502
+    },
+    {
+      "src": 45503,
+      "name": "Zircon",
+      "dst": 45503
+    },
+    {
+      "src": 45504,
+      "name": "Pollucite",
+      "dst": 45504
+    },
+    {
+      "src": 45506,
+      "name": "Cinnabar",
+      "dst": 45506
+    },
+    {
+      "src": 45510,
+      "name": "Xenotime",
+      "dst": 45510
+    },
+    {
+      "src": 45511,
+      "name": "Monazite",
+      "dst": 45511
+    },
+    {
+      "src": 45512,
+      "name": "Loparite",
+      "dst": 45512
+    },
+    {
+      "src": 45513,
+      "name": "Ytterbite",
+      "dst": 45513
+    },
+    {
+      "src": 46252,
+      "name": "Raspite",
+      "dst": 46252
+    },
+    {
+      "src": 46253,
+      "name": "Adamantine Raspite",
+      "dst": 46252
+    },
+    {
+      "src": 46254,
+      "name": "Polycrase",
+      "dst": 46254
+    },
+    {
+      "src": 46255,
+      "name": "Granitic Polycrase",
+      "dst": 46254
+    },
+    {
+      "src": 46256,
+      "name": "Moissanite",
+      "dst": 46256
+    },
+    {
+      "src": 46257,
+      "name": "Diamond Moissanite",
+      "dst": 46256
+    },
+    {
+      "src": 46258,
+      "name": "Kangite",
+      "dst": 46258
+    },
+    {
+      "src": 46259,
+      "name": "Cubic Kangite",
+      "dst": 46258
+    },
+    {
+      "src": 46280,
+      "name": "Brimful Zeolites",
+      "dst": 45490
+    },
+    {
+      "src": 46281,
+      "name": "Glistening Zeolites",
+      "dst": 45490
+    },
+    {
+      "src": 46282,
+      "name": "Brimful Sylvite",
+      "dst": 45491
+    },
+    {
+      "src": 46283,
+      "name": "Glistening Sylvite",
+      "dst": 45491
+    },
+    {
+      "src": 46284,
+      "name": "Brimful Bitumens",
+      "dst": 45492
+    },
+    {
+      "src": 46285,
+      "name": "Glistening Bitumens",
+      "dst": 45492
+    },
+    {
+      "src": 46286,
+      "name": "Brimful Coesite",
+      "dst": 45493
+    },
+    {
+      "src": 46287,
+      "name": "Glistening Coesite",
+      "dst": 45493
+    },
+    {
+      "src": 46288,
+      "name": "Copious Cobaltite",
+      "dst": 45494
+    },
+    {
+      "src": 46289,
+      "name": "Twinkling Cobaltite",
+      "dst": 45494
+    },
+    {
+      "src": 46290,
+      "name": "Copious Euxenite",
+      "dst": 45495
+    },
+    {
+      "src": 46291,
+      "name": "Twinkling Euxenite",
+      "dst": 45495
+    },
+    {
+      "src": 46292,
+      "name": "Copious Titanite",
+      "dst": 45496
+    },
+    {
+      "src": 46293,
+      "name": "Twinkling Titanite",
+      "dst": 45496
+    },
+    {
+      "src": 46294,
+      "name": "Copious Scheelite",
+      "dst": 45497
+    },
+    {
+      "src": 46295,
+      "name": "Twinkling Scheelite",
+      "dst": 45497
+    },
+    {
+      "src": 46296,
+      "name": "Lavish Otavite",
+      "dst": 45498
+    },
+    {
+      "src": 46297,
+      "name": "Shimmering Otavite",
+      "dst": 45498
+    },
+    {
+      "src": 46298,
+      "name": "Lavish Sperrylite",
+      "dst": 45499
+    },
+    {
+      "src": 46299,
+      "name": "Shimmering Sperrylite",
+      "dst": 45499
+    },
+    {
+      "src": 46300,
+      "name": "Lavish Vanadinite",
+      "dst": 45500
+    },
+    {
+      "src": 46301,
+      "name": "Shimmering Vanadinite",
+      "dst": 45500
+    },
+    {
+      "src": 46302,
+      "name": "Lavish Chromite",
+      "dst": 45501
+    },
+    {
+      "src": 46303,
+      "name": "Shimmering Chromite",
+      "dst": 45501
+    },
+    {
+      "src": 46304,
+      "name": "Replete Carnotite",
+      "dst": 45502
+    },
+    {
+      "src": 46305,
+      "name": "Glowing Carnotite",
+      "dst": 45502
+    },
+    {
+      "src": 46306,
+      "name": "Replete Zircon",
+      "dst": 45503
+    },
+    {
+      "src": 46307,
+      "name": "Glowing Zircon",
+      "dst": 45503
+    },
+    {
+      "src": 46308,
+      "name": "Replete Pollucite",
+      "dst": 45504
+    },
+    {
+      "src": 46309,
+      "name": "Glowing Pollucite",
+      "dst": 45504
+    },
+    {
+      "src": 46310,
+      "name": "Replete Cinnabar",
+      "dst": 45506
+    },
+    {
+      "src": 46311,
+      "name": "Glowing Cinnabar",
+      "dst": 45506
+    },
+    {
+      "src": 46312,
+      "name": "Bountiful Xenotime",
+      "dst": 45510
+    },
+    {
+      "src": 46313,
+      "name": "Shining Xenotime",
+      "dst": 45510
+    },
+    {
+      "src": 46314,
+      "name": "Bountiful Monazite",
+      "dst": 45511
+    },
+    {
+      "src": 46315,
+      "name": "Shining Monazite",
+      "dst": 45511
+    },
+    {
+      "src": 46316,
+      "name": "Bountiful Loparite",
+      "dst": 45512
+    },
+    {
+      "src": 46317,
+      "name": "Shining Loparite",
+      "dst": 45512
+    },
+    {
+      "src": 46318,
+      "name": "Bountiful Ytterbite",
+      "dst": 45513
+    },
+    {
+      "src": 46319,
+      "name": "Shining Ytterbite",
+      "dst": 45513
+    },
+    {
+      "src": 46675,
+      "name": "Jet Ochre",
+      "dst": 46675
+    },
+    {
+      "src": 46676,
+      "name": "Cubic Bistot",
+      "dst": 1223
+    },
+    {
+      "src": 46677,
+      "name": "Pellucid Crokite",
+      "dst": 46677
+    },
+    {
+      "src": 46678,
+      "name": "Flawless Arkonor",
+      "dst": 22
+    },
+    {
+      "src": 46679,
+      "name": "Brilliant Gneiss",
+      "dst": 46679
+    },
+    {
+      "src": 46680,
+      "name": "Lustrous Hedbergite",
+      "dst": 46680
+    },
+    {
+      "src": 46681,
+      "name": "Scintillating Hemorphite",
+      "dst": 46681
+    },
+    {
+      "src": 46682,
+      "name": "Immaculate Jaspet",
+      "dst": 46682
+    },
+    {
+      "src": 46683,
+      "name": "Resplendant Kernite",
+      "dst": 46683
+    },
+    {
+      "src": 46684,
+      "name": "Platinoid Omber",
+      "dst": 46684
+    },
+    {
+      "src": 46685,
+      "name": "Sparkling Plagioclase",
+      "dst": 46685
+    },
+    {
+      "src": 46686,
+      "name": "Opulent Pyroxeres",
+      "dst": 46686
+    },
+    {
+      "src": 46687,
+      "name": "Glossy Scordite",
+      "dst": 46687
+    },
+    {
+      "src": 46688,
+      "name": "Dazzling Spodumain",
+      "dst": 46688
+    },
+    {
+      "src": 46689,
+      "name": "Stable Veldspar",
+      "dst": 46689
+    },
+    {
+      "src": 46691,
+      "name": "Batch Compressed Flawless Arkonor",
+      "dst": 46678
+    },
+    {
+      "src": 46692,
+      "name": "Batch Compressed Cubic Bistot",
+      "dst": 46676
+    },
+    {
+      "src": 46693,
+      "name": "Batch Compressed Pellucid Crokite",
+      "dst": 46677
+    },
+    {
+      "src": 46694,
+      "name": "Batch Compressed Jet Ochre",
+      "dst": 46675
+    },
+    {
+      "src": 46695,
+      "name": "Batch Compressed Brilliant Gneiss",
+      "dst": 46679
+    },
+    {
+      "src": 46696,
+      "name": "Batch Compressed Lustrous Hedbergite",
+      "dst": 46680
+    },
+    {
+      "src": 46697,
+      "name": "Batch Compressed Scintillating Hemorphite",
+      "dst": 46681
+    },
+    {
+      "src": 46698,
+      "name": "Batch Compressed Immaculate Jaspet",
+      "dst": 46682
+    },
+    {
+      "src": 46699,
+      "name": "Batch Compressed Resplendant Kernite",
+      "dst": 46683
+    },
+    {
+      "src": 46700,
+      "name": "Batch Compressed Platinoid Omber",
+      "dst": 46684
+    },
+    {
+      "src": 46701,
+      "name": "Batch Compressed Sparkling Plagioclase",
+      "dst": 46685
+    },
+    {
+      "src": 46702,
+      "name": "Batch Compressed Opulent Pyroxeres",
+      "dst": 46686
+    },
+    {
+      "src": 46703,
+      "name": "Batch Compressed Glossy Scordite",
+      "dst": 46687
+    },
+    {
+      "src": 46704,
+      "name": "Batch Compressed Dazzling Spodumain",
+      "dst": 46688
+    },
+    {
+      "src": 46705,
+      "name": "Batch Compressed Stable Veldspar",
+      "dst": 46689
+    },
+    {
+      "src": 60771,
+      "name": "Nephrite",
+      "dst": 1230
+    },
+    {
+      "src": 62454,
+      "name": "Compressed Bitumens",
+      "dst": 45492
+    },
+    {
+      "src": 62455,
+      "name": "Compressed Brimful Bitumens",
+      "dst": 45492
+    },
+    {
+      "src": 62456,
+      "name": "Compressed Glistening Bitumens ",
+      "dst": 45492
+    },
+    {
+      "src": 62457,
+      "name": "Compressed Coesite ",
+      "dst": 45493
+    },
+    {
+      "src": 62458,
+      "name": "Compressed Brimful Coesite ",
+      "dst": 45493
+    },
+    {
+      "src": 62459,
+      "name": "Compressed Glistening Coesite ",
+      "dst": 45493
+    },
+    {
+      "src": 62460,
+      "name": "Compressed Sylvite ",
+      "dst": 45491
+    },
+    {
+      "src": 62461,
+      "name": "Compressed Brimful Sylvite ",
+      "dst": 45491
+    },
+    {
+      "src": 62463,
+      "name": "Compressed Zeolites ",
+      "dst": 45490
+    },
+    {
+      "src": 62464,
+      "name": "Compressed Brimful Zeolites ",
+      "dst": 45490
+    },
+    {
+      "src": 62466,
+      "name": "Compressed Glistening Sylvite",
+      "dst": 45491
+    },
+    {
+      "src": 62467,
+      "name": "Compressed Glistening Zeolites ",
+      "dst": 45490
+    },
+    {
+      "src": 62468,
+      "name": "Compressed Scheelite ",
+      "dst": 45497
+    },
+    {
+      "src": 62469,
+      "name": "Compressed Copious Scheelite ",
+      "dst": 45497
+    },
+    {
+      "src": 62470,
+      "name": "Compressed Twinkling Scheelite ",
+      "dst": 45497
+    },
+    {
+      "src": 62471,
+      "name": "Compressed Euxenite ",
+      "dst": 45495
+    },
+    {
+      "src": 62472,
+      "name": "Compressed Copious Euxenite",
+      "dst": 45495
+    },
+    {
+      "src": 62473,
+      "name": "Compressed Twinkling Euxenite ",
+      "dst": 45495
+    },
+    {
+      "src": 62474,
+      "name": "Compressed Cobaltite ",
+      "dst": 45494
+    },
+    {
+      "src": 62475,
+      "name": "Compressed Copious Cobaltite ",
+      "dst": 45494
+    },
+    {
+      "src": 62476,
+      "name": "Compressed Twinkling Cobaltite",
+      "dst": 45494
+    },
+    {
+      "src": 62477,
+      "name": "Compressed Titanite ",
+      "dst": 45496
+    },
+    {
+      "src": 62478,
+      "name": "Compressed Copious Titanite",
+      "dst": 45496
+    },
+    {
+      "src": 62479,
+      "name": "Compressed Twinkling Titanite ",
+      "dst": 45496
+    },
+    {
+      "src": 62480,
+      "name": "Compressed Chromite",
+      "dst": 45501
+    },
+    {
+      "src": 62481,
+      "name": "Compressed Lavish Chromite",
+      "dst": 45501
+    },
+    {
+      "src": 62482,
+      "name": "Compressed Shimmering Chromite ",
+      "dst": 45501
+    },
+    {
+      "src": 62483,
+      "name": "Compressed Otavite ",
+      "dst": 45498
+    },
+    {
+      "src": 62484,
+      "name": "Compressed Lavish Otavite ",
+      "dst": 45498
+    },
+    {
+      "src": 62485,
+      "name": "Compressed Shimmering Otavite",
+      "dst": 45498
+    },
+    {
+      "src": 62486,
+      "name": "Compressed Sperrylite ",
+      "dst": 45499
+    },
+    {
+      "src": 62487,
+      "name": "Compressed Lavish Sperrylite ",
+      "dst": 45499
+    },
+    {
+      "src": 62488,
+      "name": "Compressed Shimmering Sperrylite ",
+      "dst": 45499
+    },
+    {
+      "src": 62489,
+      "name": "Compressed Vanadinite",
+      "dst": 45500
+    },
+    {
+      "src": 62490,
+      "name": "Compressed Lavish Vanadinite",
+      "dst": 45500
+    },
+    {
+      "src": 62491,
+      "name": "Compressed Shimmering Vanadinite ",
+      "dst": 45500
+    },
+    {
+      "src": 62492,
+      "name": "Compressed Carnotite ",
+      "dst": 45502
+    },
+    {
+      "src": 62493,
+      "name": "Compressed Replete Carnotite ",
+      "dst": 45502
+    },
+    {
+      "src": 62494,
+      "name": "Compressed Glowing Carnotite",
+      "dst": 45502
+    },
+    {
+      "src": 62495,
+      "name": "Compressed Cinnabar ",
+      "dst": 45506
+    },
+    {
+      "src": 62496,
+      "name": "Compressed Replete Cinnabar ",
+      "dst": 45506
+    },
+    {
+      "src": 62497,
+      "name": "Compressed Glowing Cinnabar ",
+      "dst": 45506
+    },
+    {
+      "src": 62498,
+      "name": "Compressed Pollucite ",
+      "dst": 45504
+    },
+    {
+      "src": 62499,
+      "name": "Compressed Replete Pollucite ",
+      "dst": 45504
+    },
+    {
+      "src": 62500,
+      "name": "Compressed Glowing Pollucite ",
+      "dst": 45504
+    },
+    {
+      "src": 62501,
+      "name": "Compressed Zircon ",
+      "dst": 45503
+    },
+    {
+      "src": 62502,
+      "name": "Compressed Replete Zircon ",
+      "dst": 45503
+    },
+    {
+      "src": 62503,
+      "name": "Compressed Glowing Zircon ",
+      "dst": 45503
+    },
+    {
+      "src": 62504,
+      "name": "Compressed Loparite ",
+      "dst": 45512
+    },
+    {
+      "src": 62505,
+      "name": "Compressed Bountiful Loparite ",
+      "dst": 45512
+    },
+    {
+      "src": 62506,
+      "name": "Compressed Shining Loparite ",
+      "dst": 45512
+    },
+    {
+      "src": 62507,
+      "name": "Compressed Monazite ",
+      "dst": 45511
+    },
+    {
+      "src": 62508,
+      "name": "Compressed Bountiful Monazite ",
+      "dst": 45511
+    },
+    {
+      "src": 62509,
+      "name": "Compressed Shining Monazite ",
+      "dst": 45511
+    },
+    {
+      "src": 62510,
+      "name": "Compressed Xenotime ",
+      "dst": 45510
+    },
+    {
+      "src": 62511,
+      "name": "Compressed Bountiful Xenotime",
+      "dst": 45510
+    },
+    {
+      "src": 62512,
+      "name": "Compressed Shining Xenotime ",
+      "dst": 45510
+    },
+    {
+      "src": 62513,
+      "name": "Compressed Ytterbite ",
+      "dst": 45513
+    },
+    {
+      "src": 62514,
+      "name": "Compressed Bountiful Ytterbite ",
+      "dst": 45513
+    },
+    {
+      "src": 62515,
+      "name": "Compressed Shining Ytterbite",
+      "dst": 45513
+    },
+    {
+      "src": 62516,
+      "name": "Compressed Veldspar",
+      "dst": 1230
+    },
+    {
+      "src": 62517,
+      "name": "Compressed Concentrated Veldspar ",
+      "dst": 1230
+    },
+    {
+      "src": 62518,
+      "name": "Compressed Dense Veldspar ",
+      "dst": 1230
+    },
+    {
+      "src": 62519,
+      "name": "Compressed Stable Veldspar ",
+      "dst": 46689
+    },
+    {
+      "src": 62520,
+      "name": "Compressed Scordite",
+      "dst": 1228
+    },
+    {
+      "src": 62521,
+      "name": "Compressed Condensed Scordite ",
+      "dst": 1228
+    },
+    {
+      "src": 62522,
+      "name": "Compressed Massive Scordite",
+      "dst": 1228
+    },
+    {
+      "src": 62523,
+      "name": "Compressed Glossy Scordite ",
+      "dst": 46687
+    },
+    {
+      "src": 62524,
+      "name": "Compressed Pyroxeres ",
+      "dst": 1224
+    },
+    {
+      "src": 62525,
+      "name": "Compressed Solid Pyroxeres",
+      "dst": 1224
+    },
+    {
+      "src": 62526,
+      "name": "Compressed Viscous Pyroxeres ",
+      "dst": 1224
+    },
+    {
+      "src": 62527,
+      "name": "Compressed Opulent Pyroxeres ",
+      "dst": 46686
+    },
+    {
+      "src": 62528,
+      "name": "Compressed Plagioclase ",
+      "dst": 18
+    },
+    {
+      "src": 62529,
+      "name": "Compressed Azure Plagioclase ",
+      "dst": 18
+    },
+    {
+      "src": 62530,
+      "name": "Compressed Rich Plagioclase ",
+      "dst": 18
+    },
+    {
+      "src": 62531,
+      "name": "Compressed Sparkling Plagioclase ",
+      "dst": 46685
+    },
+    {
+      "src": 62532,
+      "name": "Compressed Omber ",
+      "dst": 1227
+    },
+    {
+      "src": 62533,
+      "name": "Compressed Silvery Omber ",
+      "dst": 1227
+    },
+    {
+      "src": 62534,
+      "name": "Compressed Golden Omber ",
+      "dst": 1227
+    },
+    {
+      "src": 62535,
+      "name": "Compressed Platinoid Omber ",
+      "dst": 46684
+    },
+    {
+      "src": 62536,
+      "name": "Compressed Kernite ",
+      "dst": 20
+    },
+    {
+      "src": 62537,
+      "name": "Compressed Luminous Kernite ",
+      "dst": 20
+    },
+    {
+      "src": 62538,
+      "name": "Compressed Fiery Kernite ",
+      "dst": 20
+    },
+    {
+      "src": 62539,
+      "name": "Compressed Resplendant Kernite ",
+      "dst": 46683
+    },
+    {
+      "src": 62540,
+      "name": "Compressed Jaspet",
+      "dst": 1226
+    },
+    {
+      "src": 62541,
+      "name": "Compressed Pure Jaspet",
+      "dst": 1226
+    },
+    {
+      "src": 62542,
+      "name": "Compressed Pristine Jaspet ",
+      "dst": 1226
+    },
+    {
+      "src": 62543,
+      "name": "Compressed Immaculate Jaspet ",
+      "dst": 46682
+    },
+    {
+      "src": 62544,
+      "name": "Compressed Hemorphite",
+      "dst": 1231
+    },
+    {
+      "src": 62545,
+      "name": "Compressed Vivid Hemorphite ",
+      "dst": 1231
+    },
+    {
+      "src": 62546,
+      "name": "Compressed Radiant Hemorphite ",
+      "dst": 1231
+    },
+    {
+      "src": 62547,
+      "name": "Compressed Scintillating Hemorphite ",
+      "dst": 46681
+    },
+    {
+      "src": 62548,
+      "name": "Compressed Hedbergite ",
+      "dst": 21
+    },
+    {
+      "src": 62549,
+      "name": "Compressed Vitric Hedbergite ",
+      "dst": 21
+    },
+    {
+      "src": 62550,
+      "name": "Compressed Glazed Hedbergite",
+      "dst": 21
+    },
+    {
+      "src": 62551,
+      "name": "Compressed Lustrous Hedbergite ",
+      "dst": 46680
+    },
+    {
+      "src": 62552,
+      "name": "Compressed Gneiss",
+      "dst": 1229
+    },
+    {
+      "src": 62553,
+      "name": "Compressed Iridescent Gneiss ",
+      "dst": 1229
+    },
+    {
+      "src": 62554,
+      "name": "Compressed Prismatic Gneiss",
+      "dst": 1229
+    },
+    {
+      "src": 62555,
+      "name": "Compressed Brilliant Gneiss ",
+      "dst": 46679
+    },
+    {
+      "src": 62556,
+      "name": "Compressed Dark Ochre ",
+      "dst": 1232
+    },
+    {
+      "src": 62557,
+      "name": "Compressed Onyx Ochre ",
+      "dst": 1232
+    },
+    {
+      "src": 62558,
+      "name": "Compressed Obsidian Ochre ",
+      "dst": 1232
+    },
+    {
+      "src": 62559,
+      "name": "Compressed Jet Ochre",
+      "dst": 46675
+    },
+    {
+      "src": 62560,
+      "name": "Compressed Crokite",
+      "dst": 1225
+    },
+    {
+      "src": 62561,
+      "name": "Compressed Sharp Crokite",
+      "dst": 1225
+    },
+    {
+      "src": 62562,
+      "name": "Compressed Crystalline Crokite ",
+      "dst": 1225
+    },
+    {
+      "src": 62563,
+      "name": "Compressed Pellucid Crokite ",
+      "dst": 46677
+    },
+    {
+      "src": 62564,
+      "name": "Compressed Bistot ",
+      "dst": 1223
+    },
+    {
+      "src": 62565,
+      "name": "Compressed Triclinic Bistot ",
+      "dst": 1223
+    },
+    {
+      "src": 62566,
+      "name": "Compressed Monoclinic Bistot ",
+      "dst": 1223
+    },
+    {
+      "src": 62567,
+      "name": "Compressed Cubic Bistot ",
+      "dst": 46676
+    },
+    {
+      "src": 62568,
+      "name": "Compressed Arkonor ",
+      "dst": 22
+    },
+    {
+      "src": 62569,
+      "name": "Compressed Crimson Arkonor ",
+      "dst": 22
+    },
+    {
+      "src": 62570,
+      "name": "Compressed Prime Arkonor",
+      "dst": 22
+    },
+    {
+      "src": 62571,
+      "name": "Compressed Flawless Arkonor",
+      "dst": 46678
+    },
+    {
+      "src": 62572,
+      "name": "Compressed Spodumain",
+      "dst": 19
+    },
+    {
+      "src": 62573,
+      "name": "Compressed Bright Spodumain ",
+      "dst": 19
+    },
+    {
+      "src": 62574,
+      "name": "Compressed Gleaming Spodumain ",
+      "dst": 19
+    },
+    {
+      "src": 62575,
+      "name": "Compressed Dazzling Spodumain ",
+      "dst": 46688
+    },
+    {
+      "src": 62586,
+      "name": "Compressed Mercoxit ",
+      "dst": 11396
+    },
+    {
+      "src": 62587,
+      "name": "Compressed Magma Mercoxit ",
+      "dst": 11396
+    },
+    {
+      "src": 62588,
+      "name": "Compressed Vitreous Mercoxit ",
+      "dst": 11396
+    }
+  ]
