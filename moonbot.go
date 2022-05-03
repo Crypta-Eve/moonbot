@@ -3,18 +3,21 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/bwmarrin/discordgo"
-	"github.com/davecgh/go-spew/spew"
-	"github.com/gobuffalo/envy"
-	"golang.org/x/text/language"
-	"golang.org/x/text/message"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"sort"
+	"strconv"
 	"syscall"
 	"time"
+
+	"github.com/bwmarrin/discordgo"
+	"github.com/davecgh/go-spew/spew"
+	"github.com/dustin/go-humanize"
+	"github.com/gobuffalo/envy"
+	"golang.org/x/text/language"
+	"golang.org/x/text/message"
 )
 
 var (
@@ -73,7 +76,7 @@ func main() {
 	dg.Close()
 }
 
-func checkError(err error){
+func checkError(err error) {
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -92,8 +95,21 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if m.Content != trigger {
 		return
 	}
-	// https://ocic1.crypta.tech/moonbot/public/5bc10e8e-ed4f-49a7-8dbb-393bf29c180b
-	url := fmt.Sprintf("%s/moonbot/public/%s", host, slug)
+
+	embed := NewEmbed().
+		SetTitle("Moon Report Running").
+		SetColor(0x17A2B8)
+	smsg, _ := s.ChannelMessageSendEmbed(m.ChannelID, embed.MessageEmbed)
+	defer s.ChannelMessageDelete(m.ChannelID, smsg.ID)
+
+	embed2 := NewEmbed().
+		SetTitle("Updating API Data, Please Wait.").
+		SetColor(0x17A2B8)
+	smsg2, _ := s.ChannelMessageSendEmbed(m.ChannelID, embed2.MessageEmbed)
+
+	// Send the update request
+
+	url := fmt.Sprintf("%s/moonbot/public/update/%s", host, slug)
 	spew.Dump(url)
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
@@ -103,6 +119,26 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	req.Header.Set("Authorization", token)
 
 	res, err := client.Do(req)
+	if err != nil {
+		s.ChannelMessageSend(m.ChannelID, fmt.Sprintf("error getting request: %s", err.Error()))
+		return
+	}
+	res.Body.Close()
+
+	s.ChannelMessageDelete(m.ChannelID, smsg2.ID)
+
+	// Request the data.
+
+	url = fmt.Sprintf("%s/moonbot/public/%s", host, slug)
+	spew.Dump(url)
+	req, err = http.NewRequest(http.MethodGet, url, nil)
+	if err != nil {
+		s.ChannelMessageSend(m.ChannelID, fmt.Sprintf("error creating request: %s", err.Error()))
+		return
+	}
+	req.Header.Set("Authorization", token)
+
+	res, err = client.Do(req)
 	if err != nil {
 		s.ChannelMessageSend(m.ChannelID, fmt.Sprintf("error getting request: %s", err.Error()))
 		return
@@ -117,16 +153,6 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	}
 	sort.Sort(resp)
 
-	embed := NewEmbed().
-		SetTitle("Moon Report Running").
-		SetColor(0x17A2B8)
-	s.ChannelMessageSendEmbed(m.ChannelID, embed.MessageEmbed)
-
-	activeEmbed := NewEmbed().
-		SetTitle("Active Extractions").
-		SetColor(0x28A745)
-	isActive := false
-
 	upcomingEmbed := NewEmbed().
 		SetTitle("Upcoming Extractions").
 		SetColor(0xFFC107)
@@ -136,26 +162,66 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	for _, e := range resp {
 		if e.isActive() {
-			isActive = true
+
+			name := ""
 			if e.Structure.Info.StructureID > 0 {
-				//	We have the structure info, act accordingly
-				activeEmbed.AddField(e.Structure.Info.Name, p.Sprintf("%d m3", e.volume()))
+				name = e.Structure.Info.Name
 			} else {
-				activeEmbed.AddField(e.Moon.Name, p.Sprintf("%d m3", e.volume()))
+				name = e.Moon.Name
 			}
+
+			moonEmbed := NewEmbed().
+				SetTitle(name).
+				SetColor(0x28A745)
+
+			// First check if we have mining data available
+			minedTotal := make(map[int]int)
+			if e.Observer.ObserverID > 0 && len(e.Observer.Entries) > 0 {
+				for _, mined := range e.Observer.Entries {
+					entryTime, err := time.Parse(timeFormat, mined.LastUpdated)
+					if err != nil {
+						continue
+					}
+					d := 24 * time.Hour
+					// make sure that this entry refers to this extraction
+					if entryTime.Truncate(d).After(e.ChunkArrivalTimeParsed().Truncate(d).Add(-1 * time.Second)) {
+						minedTotal[mined.TypeID] += mined.Quantity
+					}
+				}
+			}
+
+			log.Printf("%#v", minedTotal)
+
+			for _, ore := range e.Moon.MoonReport.Content {
+				pe, err := strconv.ParseFloat(ore.Pivot.Rate, 32)
+				if err != nil {
+					continue
+				}
+				pulledVol := float64(e.volume()) * pe
+				remainVol := pulledVol - float64(minedTotal[ore.TypeID]*ore.Volume)
+
+				volString := p.Sprintf("%s left (%.1f%%)", humanize.SIWithDigits(remainVol, 2, "m3"), remainVol/pulledVol*100)
+
+				moonEmbed.AddField(ore.TypeName, volString)
+			}
+
+			_, err = s.ChannelMessageSendEmbed(m.ChannelID, moonEmbed.MessageEmbed)
+			if err != nil {
+				s.ChannelMessageSend(m.ChannelID, fmt.Sprintf("failed to send active moon embed: %w", err))
+			}
+
 		} else {
 			isUpcoming = true
+
+			dateString := e.ChunkArrivalTimeParsed().Format("Jan _2 15:04") + " -- " + humanize.SIWithDigits(float64(e.volume()), 2, "m3")
+
 			if e.Structure.Info.StructureID > 0 {
 				//	We have the structure info, act accordingly
-				upcomingEmbed.AddField(e.Structure.Info.Name, e.ChunkArrivalTimeParsed().Format("Jan _2 15:04"))
+				upcomingEmbed.AddField(e.Structure.Info.Name, dateString)
 			} else {
-				upcomingEmbed.AddField(e.Moon.Name, e.ChunkArrivalTimeParsed().Format("Jan _2 15:04"))
+				upcomingEmbed.AddField(e.Moon.Name, dateString)
 			}
 		}
-	}
-
-	if isActive {
-		s.ChannelMessageSendEmbed(m.ChannelID, activeEmbed.MessageEmbed)
 	}
 
 	if isUpcoming {
@@ -166,8 +232,6 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		SetTitle("Moon Report Complete!").
 		SetColor(0x17A2B8).
 		SetFooter("MoonBot by Crypta Electrica")
-	s.ChannelMessageSendEmbed(m.ChannelID, embedFoot.MessageEmbed)
-
-
+	_, err = s.ChannelMessageSendEmbed(m.ChannelID, embedFoot.MessageEmbed)
 
 }

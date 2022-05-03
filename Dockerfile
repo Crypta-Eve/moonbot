@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM golang:1.17-alpine AS build
+FROM golang:1.18-alpine AS build
 
 WORKDIR /app
 
@@ -10,9 +10,9 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o moonbot .
+RUN CGO_ENABLED=0 go build -o moonbot .
 
-FROM scratch
+FROM alpine
 
 COPY --from=build /app/moonbot /app/moonbot
 

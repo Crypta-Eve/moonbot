@@ -5,6 +5,10 @@ import (
 	"time"
 )
 
+const (
+	timeFormat = "2006-01-02 15:04:05"
+)
+
 type Extraction struct {
 	ID                  int    `json:"id"`
 	CorporationID       int    `json:"corporation_id"`
@@ -131,13 +135,19 @@ type Extraction struct {
 
 func (e Extraction) ChunkArrivalTimeParsed() time.Time {
 	// TODO store this for subsequent calls
-	t, _ := time.Parse("2006-01-02 15:04:05", e.ChunkArrivalTime)
+	t, _ := time.Parse(timeFormat, e.ChunkArrivalTime)
 	return t
 }
 
 func (e Extraction) StartTimeParsed() time.Time {
 	// TODO store this for subsequent calls
-	t, _ := time.Parse("2006-01-02 15:04:05", e.ExtractionStartTime)
+	t, _ := time.Parse(timeFormat, e.ExtractionStartTime)
+	return t
+}
+
+func (e Extraction) DecayTimeParsed() time.Time {
+	// TODO store this for subsequent calls
+	t, _ := time.Parse(timeFormat, e.NaturalDecayTime)
 	return t
 }
 
@@ -146,12 +156,12 @@ func (e Extraction) ExtractionTime() time.Duration {
 }
 
 func (e Extraction) volume() int {
-	theoretical := (e.ExtractionTime().Seconds() / 3600.00) * 20000
+	theoretical := (e.ExtractionTime().Seconds() / 3600.00) * 40000
 
 	per := 0.0
-	for _, p := range e.Moon.MoonReport.Content{
+	for _, p := range e.Moon.MoonReport.Content {
 		pe, err := strconv.ParseFloat(p.Pivot.Rate, 32)
-		if err != nil{
+		if err != nil {
 			continue
 		}
 		per += pe
