@@ -10,6 +10,7 @@ import (
 	"os/signal"
 	"sort"
 	"strconv"
+	"strings"
 	"syscall"
 	"time"
 
@@ -244,8 +245,10 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			})
 
 			for _, ore := range contents {
-				secondLine += " " + ore.TypeName
+				secondLine += " " + ore.TypeName + ","
 			}
+
+			secondLine = strings.TrimSuffix(secondLine, ",")
 
 			if e.Structure.Info.StructureID > 0 {
 				//	We have the structure info, act accordingly
